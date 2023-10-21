@@ -12,7 +12,7 @@
         height: 100vh;
         margin: 0;
 
-        background-image: url("sitebg.png");
+        background-image: url("sitebg1.png");
         background-size: cover;
       }
 
@@ -20,14 +20,27 @@
         border: 3px solid white;
         border-radius: 13px;
         position: absolute;
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(2);
+        top: 40%;
+        left: 52%;
+        transform: translate(-50%, -50%) scale(3, 2.5);
+      }
+
+      .overlay {
+        position: absolute;
+        top: 16%;
+        left: 51%;
+        transform: translate(-50%, -50%);
+        width: 12vw;
+        height: 12vw;
+        z-index: 1;
+        background-image: url("birdimage.gif");
+        background-size: cover;
       }
     </style>
   </head>
   <body>
     <w3m-core-button></w3m-core-button>
+    <div class="overlay"></div>
     <script src="main.js" type="module"></script>
   </body>
 </html>
